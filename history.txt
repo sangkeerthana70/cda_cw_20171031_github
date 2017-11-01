@@ -1,0 +1,194 @@
+nuradha78:~/workspace (master) $ pwd
+/home/ubuntu/workspace
+anuradha78:~/workspace (master) $ cd git_test
+anuradha78:~/workspace/git_test (master) $ git checkout myNotesBranch
+Switched to branch 'myNotesBranch'
+anuradha78:~/workspace/git_test (myNotesBranch) $ git merge master
+Already up-to-date.
+anuradha78:~/workspace/git_test (myNotesBranch) $ git hist
+* 9e04ce1 2017-10-31 | create Notes.txt (HEAD -> myNotesBranch) [Anuradha]
+* 7f236db 2017-10-31 | Minor modification (myNotedBranch, master) [Anuradha]
+* df8944d 2017-10-31 | Version 1.0 [Anuradha]
+anuradha78:~/workspace/git_test (myNotesBranch) $ git checkout master
+Switched to branch 'master'
+anuradha78:~/workspace/git_test (master) $ git checkout myNotesBranch
+Switched to branch 'myNotesBranch'
+anuradha78:~/workspace/git_test (myNotesBranch) $ git merge master
+Already up-to-date.
+anuradha78:~/workspace/git_test (myNotesBranch) $ git checkout myNotedBranch
+Switched to branch 'myNotedBranch'
+anuradha78:~/workspace/git_test (myNotedBranch) $ git merge master
+Already up-to-date.
+anuradha78:~/workspace/git_test (myNotedBranch) $ pwd
+/home/ubuntu/workspace/git_test
+anuradha78:~/workspace/git_test (myNotedBranch) $
+anuradha78:~/workspace/git_test (myNotedBranch) $ cd Notes
+bash: cd: Notes: No such file or directory
+anuradha78:~/workspace/git_test (myNotedBranch) $ git checkout myNotesBranch
+Switched to branch 'myNotesBranch'
+anuradha78:~/workspace/git_test (myNotesBranch) $ pwd
+/home/ubuntu/workspace/git_test
+anuradha78:~/workspace/git_test (myNotesBranch) $ cd Notes
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ git status
+On branch myNotesBranch
+nothing to commit, working tree clean
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ git merge Master
+merge: Master - not something we can merge
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ git merge master
+Already up-to-date.
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ git hist
+* 9e04ce1 2017-10-31 | create Notes.txt (HEAD -> myNotesBranch) [Anuradha]
+* 7f236db 2017-10-31 | Minor modification (myNotedBranch, master) [Anuradha]
+* df8944d 2017-10-31 | Version 1.0 [Anuradha]
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ pwd
+/home/ubuntu/workspace/git_test/Notes
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ clear
+anuradha78:~/workspace/git_test/Notes (myNotesBranch) $ cd ..
+anuradha78:~/workspace/git_test (myNotesBranch) $ pwd
+/home/ubuntu/workspace/git_test
+anuradha78:~/workspace/git_test (myNotesBranch) $ cd ..
+anuradha78:~/workspace (master) $ clear
+anuradha78:~/workspace (master) $ pwd
+/home/ubuntu/workspace
+anuradha78:~/workspace (master) $ pwd
+/home/ubuntu/workspace
+anuradha78:~/workspace (master) $ mkdir cw_20171031_github
+anuradha78:~/workspace (master) $ pwd
+/home/ubuntu/workspace
+anuradha78:~/workspace (master) $ cd cw_20171031_github
+anuradha78:~/workspace/cw_20171031_github (master) $ touch GandhiV2
+anuradha78:~/workspace/cw_20171031_github (master) $ ls
+GandhiV2
+anuradha78:~/workspace/cw_20171031_github (master) $ git init
+Initialized empty Git repository in /home/ubuntu/workspace/cw_20171031_github/.git/
+anuradha78:~/workspace/cw_20171031_github (master) $ git commit -m "Version 1.0"
+On branch master
+
+Initial commit
+
+Untracked files:
+        GandhiV2
+
+nothing added to commit but untracked files present
+anuradha78:~/workspace/cw_20171031_github (master) $ rm GandhiV2
+anuradha78:~/workspace/cw_20171031_github (master) $ ls
+anuradha78:~/workspace/cw_20171031_github (master) $ touch GandhiVersion2.html
+anuradha78:~/workspace/cw_20171031_github (master) $ ls
+GandhiVersion2.html
+anuradha78:~/workspace/cw_20171031_github (master) $ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        GandhiVersion2.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+anuradha78:~/workspace/cw_20171031_github (master) $ git commit -m "Version 1.0"
+On branch master
+
+Initial commit
+
+Untracked files:
+        GandhiVersion2.html
+
+nothing added to commit but untracked files present
+anuradha78:~/workspace/cw_20171031_github (master) $ 
+anuradha78:~/workspace/cw_20171031_github (master) $ git add GandhiVersion2
+fatal: pathspec 'GandhiVersion2' did not match any files
+anuradha78:~/workspace/cw_20171031_github (master) $ git add GandhiVersion2.html
+anuradha78:~/workspace/cw_20171031_github (master) $ git commit -m "Version 1.0"
+[master (root-commit) aed3b90] Version 1.0
+ 1 file changed, 116 insertions(+)
+ create mode 100644 GandhiVersion2.html
+anuradha78:~/workspace/cw_20171031_github (master) $ git remote add origin https://github.com/sangkeerthana70/cda_cw_20171031_github.git
+anuradha78:~/workspace/cw_20171031_github (master) $ git add GandhiVersion2.html
+anuradha78:~/workspace/cw_20171031_github (master) $ git commit -m "minor modification"
+[master 25b60c8] minor modification
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+anuradha78:~/workspace/cw_20171031_github (master) $ 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GandhiVersion2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+anuradha78:~/workspace/cw_20171031_github (master) $ add GandhiVersion2.html
+bash: add: command not found
+anuradha78:~/workspace/cw_20171031_github (master) $ git add GandhiVersion2.htm
+fatal: pathspec 'GandhiVersion2.htm' did not match any files
+anuradha78:~/workspace/cw_20171031_github (master) $ git add GandhiVersion2.html
+anuradha78:~/workspace/cw_20171031_github (master) $ git commit "Change Master"
+error: pathspec 'Change Master' did not match any file(s) known to git.
+anuradha78:~/workspace/cw_20171031_github (master) $ git commit -m "Change to Master"
+[master 1d6b763] Change to Master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+anuradha78:~/workspace/cw_20171031_github (master) $ git hist
+* 1d6b763 2017-11-01 | Change to Master (HEAD -> master) [Anuradha]
+* 25b60c8 2017-11-01 | minor modification [Anuradha]
+* aed3b90 2017-11-01 | Version 1.0 [Anuradha]
+anuradha78:~/workspace/cw_20171031_github (master) $ git hist --all
+* 1d6b763 2017-11-01 | Change to Master (HEAD -> master) [Anuradha]
+| * cdfa72b 2017-11-01 | create Notes.txt (myNotesBranch) [Anuradha]
+|/  
+* 25b60c8 2017-11-01 | minor modification [Anuradha]
+* aed3b90 2017-11-01 | Version 1.0 [Anuradha]
+anuradha78:~/workspace/cw_20171031_github (master) $ git checkout myNotesBranch
+Switched to branch 'myNotesBranch'
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ git merge master
+Merge made by the 'recursive' strategy.
+ GandhiVersion2.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ git hist
+*   2a48059 2017-11-01 | Merge branch 'master' into myNotesBranch (HEAD -> myNotesBranch) [Anuradha]
+|\  
+| * 1d6b763 2017-11-01 | Change to Master (master) [Anuradha]
+* | cdfa72b 2017-11-01 | create Notes.txt [Anuradha]
+|/  
+* 25b60c8 2017-11-01 | minor modification [Anuradha]
+* aed3b90 2017-11-01 | Version 1.0 [Anuradha]
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ git log > log.txt
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ cat log.txt
+commit 2a480592762bbb8ce6904c941153f0153579a890
+Merge: cdfa72b 1d6b763
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 02:13:25 2017 +0000
+
+    Merge branch 'master' into myNotesBranch
+
+commit 1d6b7633ccd975b4abc52145ead681bcdc166ac6
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 02:12:35 2017 +0000
+
+    Change to Master
+
+commit cdfa72b921b7ac95e819adee8efe9ca9ed09b758
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 02:07:51 2017 +0000
+
+    create Notes.txt
+
+commit 25b60c807cbb7617449d51c0a9d88d2d39a06bb7
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 01:59:41 2017 +0000
+
+    minor modification
+
+commit aed3b90d48e8c5c10c02b72d755fad2e3b8d6007
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 01:55:39 2017 +0000
+
+    Version 1.0
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ 
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ 
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ git hist >> log.txt
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ ls
+GandhiVersion2.html  log.txt  notes/
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ ren log.txt gitlog.txt
+bash: ren: command not found
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ rename log.txt gitlog.txt                                                 
+Bareword "txt" not allowed while "strict subs" in use at (eval 1) line 1.
+anuradha78:~/workspace/cw_20171031_github (myNotesBranch) $ 

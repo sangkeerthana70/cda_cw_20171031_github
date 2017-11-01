@@ -1,0 +1,37 @@
+commit 2a480592762bbb8ce6904c941153f0153579a890
+Merge: cdfa72b 1d6b763
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 02:13:25 2017 +0000
+
+    Merge branch 'master' into myNotesBranch
+
+commit 1d6b7633ccd975b4abc52145ead681bcdc166ac6
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 02:12:35 2017 +0000
+
+    Change to Master
+
+commit cdfa72b921b7ac95e819adee8efe9ca9ed09b758
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 02:07:51 2017 +0000
+
+    create Notes.txt
+
+commit 25b60c807cbb7617449d51c0a9d88d2d39a06bb7
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 01:59:41 2017 +0000
+
+    minor modification
+
+commit aed3b90d48e8c5c10c02b72d755fad2e3b8d6007
+Author: Anuradha <sangkeerthana@gmail.com>
+Date:   Wed Nov 1 01:55:39 2017 +0000
+
+    Version 1.0
+*   2a48059 2017-11-01 | Merge branch 'master' into myNotesBranch (HEAD -> myNotesBranch) [Anuradha]
+|\  
+| * 1d6b763 2017-11-01 | Change to Master (master) [Anuradha]
+* | cdfa72b 2017-11-01 | create Notes.txt [Anuradha]
+|/  
+* 25b60c8 2017-11-01 | minor modification [Anuradha]
+* aed3b90 2017-11-01 | Version 1.0 [Anuradha]
